@@ -5,7 +5,7 @@
 - Repertorio clonado en el ordenador.
 - Descargar e incluir Starter Kit de Adalab.
 - Releer el enunciado, y plasmar los diferente hitos del proyecto en el project Board.
-- Creación de index, y diferentes carpetas. 
+- Creación de index.html, y diferentes partials de Sass y JS. 
 
 ##ACTIVIDADES REALIZADAS 09/01/2024: 
 
