@@ -37,8 +37,8 @@
    
 };
 
-//EVENTOS
 
+//Busqueda de tu personaje favorito:
 form.addEventListener ('submit', (event) => {
    event.preventDefault();
    fetch(`//api.disneyapi.dev/character?name=${inputSearch.value}`)
@@ -46,6 +46,7 @@ form.addEventListener ('submit', (event) => {
    .then (data => {
  
        charactersData=data.data;
+       ulCharacters.innerHTML += '';
  
        renderAll ();
    })

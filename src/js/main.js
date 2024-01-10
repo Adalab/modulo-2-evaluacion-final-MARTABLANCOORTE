@@ -99,16 +99,3 @@ fetch ('//api.disneyapi.dev/character?pageSize=50')
 // Borrar todos los favoritos
 binfavourites.addEventListener('click', handleClearFavorites);
 
-form.addEventListener ('submit', (event) => {
-  event.preventDefault();
-  fetch(`//api.disneyapi.dev/character?name=${inputSearch.value}`)
-  .then (response => response.json())
-  .then (data => {
-
-      charactersData=data.data;
-      ulCharacters.innerHTML += '';
-
-      renderAll ();
-  })
-      
-});
