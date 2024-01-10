@@ -1,38 +1,21 @@
 <main class="main">
-  <form class="main__form">
+  <form class="main__form js__form">
     <label class="main__form__label" for="characterSearch">
-      <input class="main__form__input" type="text" placeholder="Ej. MULAN" name="character" id="character">
+      <input class="main__form__input js__inputSearch" type="text" placeholder="Search the name of yours favorites characters, ex: Ahadi" name="character" id="character">
     </label>
-    <input class="main__form__btn" type="submit" value="SEARCH">
+    <input class="main__form__btn js__btnSearch" type="submit" value="SEARCH">
   </form>
   <div class="main__container">
     <section class="section__favourites">
       <div class="section__favourites__icon">
-        <img class="section__favourites__icon__bin" src="./images/bin.png" alt="bin">
+        <img class="section__favourites__icon__bin js__binfavourites" src="./images/bin.png" alt="bin">
       </div>
       <h2 class="section__favourites__h2">Favourites</h2>
-      <ul class="section__favourites__ul js__ulFavourites">
-        <li class="ul__liFavourites">
-          <div class="ul__liFavourites__icons">
-            <img class="ul__liFavourites__icons__heart" src="./images/heart.png" alt="heart">
-            <img class="ul__liFavourites__icons__X" src="./images/cancel.png" alt="X">
-          </div>
-          <h3 class="ul__liFavourites__h3">Name</h3>
-          <img class="ul__liFavourites__imgs" src="./images/castillo2.jpg" alt="images Characters">
-        </li>
-      </ul>
+      <ul class="section__favourites__ul js__ulFavourites"></ul>
     </section>
     <section class="section__characters">
       <h2 class="section__characters__h2">Disney Characters</h2>
-      <ul class="section__characters__ul js__ulCharacters">
-        <li class="ul__liCharacters">
-          <div class="ul__liCharacters__icons">
-            <img class="ul__liCharacters__icons__like" src="./images/like.png" alt="like">
-          </div>
-          <h3 class="ul__liCharacters__h3">Name</h3>
-          <img class="ul__liCharacters__imgs" src="./images/castillo2.jpg" alt="images Characters">
-        </li>
-      </ul>
+      <ul class="section__characters__ul js__ulCharacters"></ul>
     </section>
   </div>
 </main>
