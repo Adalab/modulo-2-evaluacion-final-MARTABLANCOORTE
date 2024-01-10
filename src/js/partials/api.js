@@ -1,3 +1,5 @@
+'use strict';
+
 //QUERY SELECTOR
 
 const ulCharacters = document.querySelector('.js__ulCharacters');

@@ -1,3 +1,5 @@
+'use strict';
+
 //QUERY SELECTOR
 
 //DATOS

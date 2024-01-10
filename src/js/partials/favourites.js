@@ -1,3 +1,5 @@
+'use strict';
+
 //QUERY SELECTOR
 
 const ulFavourites = document.querySelector('.js__ulFavourites');
