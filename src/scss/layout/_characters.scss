@@ -1,0 +1,50 @@
+.section__characters{
+    background-color: $color-white;
+    width: 65%;
+    padding: 0.5rem;
+
+    &__h2{
+        color:$color-black;
+        text-shadow: 2rem;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    &__ul{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        height: auto;
+        align-items: center;
+        text-align: center;
+        margin: 1rem;
+    }
+}
+
+.ul__liCharacters{
+    background-color: $color-bg;
+    padding:1rem;
+    list-style: none;
+    margin: 1rem;
+
+    &__icons{
+        margin-left: 20rem;
+
+        &__like{
+            height: 2.5rem;
+            width: 2.5rem;
+        }
+    }
+
+    &__h3{
+        color:$color-black;
+        text-shadow: 2rem;
+        font-size: 3rem;
+        text-align: center;
+        margin-top: -3rem;
+    }
+
+    &__imgs{
+        width:20rem;
+        height: 20rem;
+    }
+}

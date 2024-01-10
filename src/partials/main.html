@@ -1,40 +1,38 @@
-<main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <load
-        src="/partials/link.html"
-        aClass="link__adalab"
-        text="Adalab"
-        url="https://adalab.es"
-      />
-    </li>
-    <li>
-      <load src="/partials/link.html" text="Más info del starter kit" url="./more-info.html" />
-    </li>
-  </ul>
+<main class="main">
+  <form class="main__form">
+    <label class="main__form__label" for="characterSearch">
+      <input class="main__form__input" type="text" placeholder="Ej. MULAN" name="character" id="character">
+    </label>
+    <input class="main__form__btn" type="submit" value="SEARCH">
+  </form>
+  <div class="main__container">
+    <section class="section__favourites">
+      <div class="section__favourites__icon">
+        <img class="section__favourites__icon__bin" src="./images/bin.png" alt="bin">
+      </div>
+      <h2 class="section__favourites__h2">Favourites</h2>
+      <ul class="section__favourites__ul js__ulFavourites">
+        <li class="ul__liFavourites">
+          <div class="ul__liFavourites__icons">
+            <img class="ul__liFavourites__icons__heart" src="./images/heart.png" alt="heart">
+            <img class="ul__liFavourites__icons__X" src="./images/cancel.png" alt="X">
+          </div>
+          <h3 class="ul__liFavourites__h3">Name</h3>
+          <img class="ul__liFavourites__imgs" src="./images/castillo2.jpg" alt="images Characters">
+        </li>
+      </ul>
+    </section>
+    <section class="section__characters">
+      <h2 class="section__characters__h2">Disney Characters</h2>
+      <ul class="section__characters__ul js__ulCharacters">
+        <li class="ul__liCharacters">
+          <div class="ul__liCharacters__icons">
+            <img class="ul__liCharacters__icons__like" src="./images/like.png" alt="like">
+          </div>
+          <h3 class="ul__liCharacters__h3">Name</h3>
+          <img class="ul__liCharacters__imgs" src="./images/castillo2.jpg" alt="images Characters">
+        </li>
+      </ul>
+    </section>
+  </div>
 </main>

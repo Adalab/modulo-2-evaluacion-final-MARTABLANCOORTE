@@ -1,0 +1,40 @@
+.main__form{
+    display: flex;
+    flex-direction: row;
+    background-color: $color-white;
+    height: 5rem;
+    width: 80%;
+    margin-top: 1rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 50%;
+    
+    &__input{
+        height: 2.5rem;
+        width:20rem;
+        margin-top: 1rem;
+        margin-left: 23.5rem;
+        margin-right: 2rem;
+        font-family: $font-main;
+        font-weight: $font-weight;
+        font-style: $font-style;
+        font-size: 1.5rem;
+        color:$color-black;   
+        
+    }
+
+    &__btn{
+        font-family: $font-main;
+        font-weight: $font-weight;
+        font-style: $font-style;
+        font-size: 1.5rem;
+        height: 2.5rem;
+        width: 15rem;
+        margin-top: 1rem;
+        background-color: $color-black;
+        color: $color-white;
+        border-radius: 50%;
+        border: none;
+        gap:5rem;
+    }
+}
