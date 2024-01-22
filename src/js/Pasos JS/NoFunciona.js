@@ -30,7 +30,7 @@
 
      }
 
-     //inner.HTML, porque significa que no está en favoritos
+     //inner.HTML, porque significa que está en favoritos
      else(selectedFavouriteData === 0) {
       favouritesData.slice(selectedFavouriteData, 1) ;
       }
