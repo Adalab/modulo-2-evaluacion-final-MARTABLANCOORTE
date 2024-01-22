@@ -6,7 +6,8 @@ const ulFavourites = document.querySelector('.js__ulFavourites');
 const binfavourites = document.querySelector('.js__binfavourites');
 const form = document.querySelector('.js__form');
 const inputSearch = document.querySelector('.js__inputSearch');
-const btnSearch = document.querySelector('.js__btnSearch'); 
+const btnSearch = document.querySelector('.js__btnSearch');
+const btnLoG = document.querySelector('.js_btnLOG');
 
 //DATOS
 let charactersData = [];
@@ -19,6 +20,7 @@ function renderOne(disneyData) {
             </div>
             <h3 class="ul__liCharacters__h3">${disneyData.name}</h3>
             <img class="ul__liCharacters__imgs" src=${disneyData.imageUrl} alt="images Characters">
+            <p class="ul__liFavourites__h3">${disneyData._id}</p>
         </li>`;
 }
 
@@ -54,7 +56,7 @@ function handleClickLikes (event){
    const selectedCharacter = charactersData[index];
    
    // Añadir a la lista de favoritos
-    ulFavourites.innerHTML += `<li class="ul__liFavourites">
+    ulFavourites.innerHTML += `<li js_favouriteContador class="ul__liFavourites">
       <div class="ul__liFavourites__icons">
         <img class="ul__liFavourites__icons__heart" src="./images/heart.png" alt="heart">
         <img class="ul__liFavourites__icons__X js__removeLikes" src="./images/cancel.png" alt="Cancel">
@@ -99,3 +101,9 @@ fetch ('//api.disneyapi.dev/character?pageSize=50')
 // Borrar todos los favoritos
 binfavourites.addEventListener('click', handleClearFavorites);
 
+const favouriteContador = document.querySelectorAll('.js_favouriteContador');
+
+btnLoG.addEventListener('click' , (event) =>{
+  event.preventDefault();
+  console.log (favouriteContador.length)
+});
